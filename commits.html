@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <title>GitHub commits live-stream</title>
+        <style>
+            body {
+                font: 1.00em Arial;
+            }
+
+            .header {
+                background: rgba(0,0,0,0.3);
+                border-radius: 0.50em;
+                display: inline-block;
+                margin: 0.50em;
+                padding: 0.50em;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .header h1 {
+                font-size: 1.00em;
+            }
+
+            #stream {
+                margin: 0 auto;
+                width: 50%;
+            }
+
+            #stream article {
+                background: #ddd;
+                border-radius: 0.50em;
+                margin: 0.25em 0;
+                padding: 0.50em;
+            }
+
+            #stream article a {
+                color: inherit;
+            }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://github.com/janl/mustache.js/raw/master/mustache.js"></script>
+        <script src="stream.js"></script>
+    </head>
+    <body>
+        <header class="header"><h1>GitHub live commit stream</h1></header>
+        <section id="stream"></section>
+    </body>
+</html>
